@@ -1,0 +1,16 @@
+#Desafio 44  - Curso em Vídeo
+#Elabora um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
+# - À vista dinheiro/cheque: 10% de desconto
+# - À vista no cartão: 5% de desconto
+# - Em até 2x no cartão: preço normal 
+# - 3x ou mais no cartão : 20% de juros
+precoNormal = float(input('Digite o preço a ser pago pelo produto: '))
+condicao = int(input('Digite qual será a forma de pagamento:\n1. À vista dinheiro/cheque\n2. À vista no cartão\n3. Em até 2x no cartão\n4. 3x ou mais no cartão\n'))
+if condicao == 1:
+  print('Você irá pagar: R${}'.format(precoNormal - (precoNormal*0.1)))
+elif condicao == 2:
+  print('Você irá pagar: R${}'.format(precoNormal - precoNormal * 0.05))
+elif condicao == 3:
+  print('Você irá pagar: R${}'.format(precoNormal))
+elif condicao == 4:
+  print('Você irá pagar: R${}'.format(precoNormal + precoNormal * 0.2))
