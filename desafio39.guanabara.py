@@ -4,16 +4,19 @@
 #- Se é a hora de se alistar.
 #- Se já passou do tempo do alistamento.
 #Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
-import datetime
 from datetime import date
-ano = int(input('Digite o ano em que nasceu: '))
-mes = int(input('Digite o mês em que nasceu: '))
-dia = int(input('Digite o dia em que nasceu: '))
-dataNasc = datetime.date(year=ano, month=mes, day=dia) 
-diferenca = date.today() - dataNasc
-if (diferenca.days / 365.25) > 18:
-  print('O prazo do alistamento já passou em {} dias'.format(diferenca.days - 6574.5))
-elif (diferenca.days / 365.25) < 18:
-  print('Ainda faltam {} dias para o alistamento'.format(6574.5 - diferenca.days))
-elif (diferenca.days / 365.25) == 18:
+anoNasc = int(input('Digite o ano em que nasceu: '))
+anoAtual = date.today().year
+idade = anoAtual - anoNasc
+if idade < 18:
+  saldo = 18 - idade
+  print('Ainda faltam {} anos para o alistamento'.format(saldo))
+  ano = anoAtual + saldo
+  print('Seu alistamento será em {}'.format(ano))
+elif idade > 18:
+  saldo = idade - 18
+  print('Você deveria ter se alistado há {} anos'.format(saldo))
+  ano = anoAtual - saldo
+  print('Seu alistamento foi em {}.'.format(ano))
+elif idade == 18:
   print('Já está na hora de se alistar.') 
