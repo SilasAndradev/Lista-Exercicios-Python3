@@ -10,5 +10,5 @@ if (notaMedia < 5):
   print('Você foi REPROVADO.')
 elif (notaMedia >= 5) and (notaMedia <= 6.9):
   print('Você está em RECUPERAÇÃO.')
-elif (notaMedia > 7):
+elif (notaMedia >= 7):
   print('Você foi APROVADO.')
