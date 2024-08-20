@@ -10,7 +10,7 @@ if ladoA < ladoB + ladoC and ladoB < ladoA + ladoB and ladoC < ladoA + ladoB:
     print('As três retas PODEM FORMAR um triângulo.')
     if ladoA == ladoB and ladoB == ladoC:
       print('O triângulo formado é um Equilátero.')
-    elif ladoC != ladoA and ladoA != ladoB:
+    elif ladoA != ladoB != ladoC != ladoA:
       print('O triângulo formado é um Escaleno.')
     elif ladoB in (ladoC, ladoA):
       print('O triângulo formado será um Isósceles.')
