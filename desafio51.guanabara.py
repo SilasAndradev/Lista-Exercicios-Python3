@@ -3,4 +3,5 @@
 num1 = int(input('Digite o primeiro termo da sua progressão aritmética: '))
 razao = int(input('Digite a razão da progressão aritmética: '))
 for i in range(1, 10):
-  print(num1 + i * razao)
+  print(num1 + i * razao, end=' -> ')
+print('Acabou')
