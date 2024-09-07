@@ -1,4 +1,4 @@
-#Desafio 76 - Curso em Video
+#Desafio 75 - Curso em Video
 a = int(input('Digite um número: '))
 b = int(input('Digite um número: '))
 c = int(input('Digite um número: '))
