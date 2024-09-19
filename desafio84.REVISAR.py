@@ -1,4 +1,4 @@
-#Desafio 86 - Curso em Vídeo
+#Desafio 84 - Curso em Vídeo
 pessoas = list()
 dado = list()
 maior = 0
