@@ -19,5 +19,6 @@ if pessoa['cpts'] != 0:
 
 print('-='*30)
 print(f'{pessoa["nome"]} nasceu em {pessoa["ano de nascimento"]}, tem {pessoa["idade"]}')
+
 if pessoa['cpts'] != 0:
     print(f'{pessoa["nome"]} ganha {pessoa["salário"]} por mês, foi contratado em {pessoa["ano de contratação"]} e vai se aposentar em {pessoa["aposentadoria"]}')
