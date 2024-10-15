@@ -5,7 +5,7 @@ def notas(*n, sit = False):
     r['menor'] = min(n)
     r['media'] = sum(n)/ len(n)
     if sit:
-        if r['media'] >= 5:
+        if 7 > r['media'] >= 5:
             r['situação'] = 'RAZOÁVEL'
         elif r['media']  >= 7:
             r['situação'] = 'BOA'
