@@ -1,14 +1,18 @@
 def aumentar(n, format = False):
-    return n + (n * (10/100)) if format == False else moeda(n)
+    res = n + (n * (10/100)) 
+    return res if format == False else moeda(res)
 
 def diminuir(n, format = False):
-    return n - (n * (10/100)) if format == False else moeda(n)
+    res = n - (n * (10/100))
+    return res if format == False else moeda(res)
 
 def dobro(n, format = False):
-    return n * 2 if format == False else moeda(n)
+    res = n * 2 
+    return res if format == False else moeda(res)
 
 def metade(n, format = False):
-    return n / 2 if format == False else moeda(n)
+    res = n / 2
+    return res if format == False else moeda(res)
 
-def moeda(n, format = False):
-    return f'R${n:.2f}'.replace('.',',') if format == False else moeda(n)
+def moeda(n):
+    return f'R${n:.2f}'.replace('.',',')
