@@ -11,4 +11,4 @@ def metade(n):
     return n / 2
 
 def moeda(n):
-    return f'R${n:>1f}'.replace('.',',')
+    return f'R${n}'.replace('.',',')
