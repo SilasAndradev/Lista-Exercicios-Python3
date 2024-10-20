@@ -1,4 +1,6 @@
-from ex112.utilidadescev import moeda
-from ex112.utilidadescev import dados
+from utilidadescev.moeda import resumo
+from utilidadescev.dados import leiaDinheiro
 
-input_Usuario = dados.leiaDinheiro("Digite o preço: ")
+input_Usuario = leiaDinheiro("Digite o preço: \n")
+
+print(resumo(input_Usuario, 20, 12))
