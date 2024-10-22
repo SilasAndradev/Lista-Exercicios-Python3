@@ -11,7 +11,29 @@ def sistema():
             print('-'*40)
             resposta = int(input('\033[0;33mSua Opção: \033[m'))
             print('-'*40) 
-        except (ValueError, TypeError):
-            print(f'\033[0;31mERRO: {resposta} o número digitado não é um inteiro\033[m')
-        except 
-            print(f'\033[0;31mERRO: {resposta} o número digitado não é um inteiro\033[m')
+            if resposta == 1:
+                print('-'*40)
+                print(f"{'PESSOAS CADASTRADAS':^40}")
+                print('-'*40)
+                arquivo = open('texto.txt', 'r')
+                conteudo = arquivo.read()
+                print(conteudo)
+            elif resposta == 2:
+                print('-'*40)
+                print(f"{'NOVO CADASTRO':^40}")
+                print('-'*40)
+                arquivo = open('novo_texto.txt', 'w')
+                nome = str(input('NOME:'))
+                arquivo.write(nome)
+                arquivo.write(int(input('IDADE:')))
+                print(f'Novo resgistro de {nome} adicionado.')
+                arquivo.close()
+            elif resposta == 3:
+                print('-'*40)
+                print(f"{'Saindo do sistema... Até logo!':^40}")
+                print('-'*40)
+                break
+
+
+            
+        
